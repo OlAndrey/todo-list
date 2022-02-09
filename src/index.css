@@ -11,3 +11,57 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0px 0px 0px;
+}
+.wrapper{
+  min-width: 50%;
+  padding: 20px;
+  border: 1px solid #efefef;
+  box-shadow:
+    0 1px 1px rgba(0,0,0,0.15),
+    0 10px 0 -5px #eee,
+    0 10px 1px -4px rgba(0,0,0,0.15),
+    0 20px 0 -10px #eee,
+    0 20px 1px -9px rgba(0,0,0,0.15);
+
+}
+.todo-add{
+  display: flex;
+  width: 100%;
+}
+.todo-list{
+  padding: 0;
+}
+.todo-item{
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  
+  padding: 30px 20px 15px;
+  border-bottom: 1px solid #cecece;
+  font-family: Roboto, sans-serif;
+  font-weight: 100;
+  font-size: 17px;
+  color: #333333;
+}
+input[type='checkbox']{
+  margin: 0px 20px 0px 0px;
+}
+input[type='text']{
+  flex: 50% 1 1;
+  margin: 0px 20px 0px 0px;
+}
+
+li span{
+  flex: 80% 0 0;
+}
+
+.done{
+  text-decoration: line-through;
+}
